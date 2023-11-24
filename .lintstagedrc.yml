@@ -1,0 +1,5 @@
+"packages/**/*.{ts,vue,js}":
+  - eslint --fix
+
+"**/*.md":
+  - prettier --write

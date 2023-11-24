@@ -1,0 +1,29 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[Makefile]
+indent_style = tab
+
+[*.{json,svg}]
+insert_final_newline = false
+
+[.{nvmrc,npmrc}]
+insert_final_newline = false
+
+[*.{md,markdown,mdown,mkd,text}]
+trim_trailing_whitespace = false
+
+[/**/node_modules/**]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+insert_final_newline = false
+trim_trailing_whitespace = false
