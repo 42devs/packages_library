@@ -11,8 +11,7 @@
     "test": "NODE_ENV=test jest",
     "docs": "typedoc",
     "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
-    "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix",
-    "changelog": "auto-changelog -p",
+    "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"
   },
   "repository": {
     "type": "git",
@@ -46,5 +45,12 @@
   "bugs": {
     "url": "https://github.com/42devs/packages_library/issues"
   },
-  "homepage": "https://github.com/42devs/packages_library/packages/transbank-sdk#readme"
+  "homepage": "https://github.com/42devs/packages_library/tree/main/packages/transbank-sdk#readme",
+  "contributors": [
+    {
+      "name": "Nicolas Martinez V.",
+      "email": "nicolas@42devs.cl",
+      "url": "https://github.com/themakunga"
+    }
+  ]
 }

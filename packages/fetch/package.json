@@ -1,0 +1,23 @@
+{
+  "name": "@42devs/fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf ./lib && tsc --build tsconfig.build.json",
+    "test": "NODE_ENV=test jest",
+    "docs": "typedoc",
+    "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
+    "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"
+  },
+  "keywords": [
+    "fetch",
+    "API",
+    "request",
+    "http",
+    "https",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT"
+}
