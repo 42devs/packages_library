@@ -1,5 +1,5 @@
 import { HttpError } from '../errors/httpError';
-import { ResponseWithBody } from '../types/ResponseWithBody';
+import { ResponseWithBody } from '../@types/ResponseWithBody';
 
 export const extendResponsePromiseWithBodyMethods = (
   responsePromise: ResponseWithBody,

@@ -1,5 +1,5 @@
-import { Init } from '../types/Init';
-import { jsonMimeType } from '../types/MimeTypes';
+import { Init } from '../@types/Init';
+import { jsonMimeType } from '../@types/MimeTypes';
 import { defaults } from './defaults';
 import { entriesToObject } from './entriesToObject';
 

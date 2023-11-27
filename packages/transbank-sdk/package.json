@@ -7,8 +7,7 @@
     "url": "https://42devs.cl"
   },
   "scripts": {
-    "build": "rimraf ./lib && tsc --build tsconfig.build.json",
-    "test": "NODE_ENV=test jest",
+    "build": "rimraf ./lib && tsc -p tsconfig.pkg.json",
     "docs": "typedoc",
     "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
     "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"

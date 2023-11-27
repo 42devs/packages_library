@@ -1,4 +1,4 @@
-import { jsonMimeType } from '../types/MimeTypes';
+import { jsonMimeType } from '../@types/MimeTypes';
 import { HttpError } from './httpError';
 
 export const createHttpError = (

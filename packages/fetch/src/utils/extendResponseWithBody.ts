@@ -4,8 +4,8 @@ import {
   formDataMimeType,
   jsonMimeType,
   textMimeType,
-} from '../types/MimeTypes';
-import { ResponseWithBody } from '../types/ResponseWithBody';
+} from '../@types/MimeTypes';
+import { ResponseWithBody } from '../@types/ResponseWithBody';
 import { isJSONResponse } from './isJSONResponse';
 
 export const extendResponseWithBody = (

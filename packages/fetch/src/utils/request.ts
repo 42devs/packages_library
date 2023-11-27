@@ -1,8 +1,8 @@
-import { Init } from '../types/Init';
-import { Method } from '../types/Method';
+import { Init } from '../@types/Init';
+import { Method } from '../@types/Method';
 import { defaults } from './defaults';
 import { HttpError } from '../errors/httpError';
-import { ResponseWithBody } from '../types/ResponseWithBody';
+import { ResponseWithBody } from '../@types/ResponseWithBody';
 import { extendResponseWithBody } from './extendResponseWithBody';
 
 export const request = <T extends BodyInit>(

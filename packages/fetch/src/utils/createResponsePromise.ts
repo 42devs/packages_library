@@ -1,5 +1,5 @@
 import { HttpError } from '../errors/httpError';
-import { ResponseWithBody } from '../types/ResponseWithBody';
+import { ResponseWithBody } from '../@types/ResponseWithBody';
 import { extendResponsePromiseWithBodyMethods } from './extendResponsePromiseWithBodyMethods';
 
 export const createResponsePromise = (body?: BodyInit, init?: ResponseInit) => {

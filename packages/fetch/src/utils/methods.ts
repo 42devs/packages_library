@@ -1,4 +1,4 @@
-import { Init } from '../types/Init';
+import { Init } from '../@types/Init';
 import { getHeaders, getJSONHeaders } from './getHeaders';
 import { request } from './request';
 

@@ -1,4 +1,4 @@
-import { jsonMimeType } from '../types/MimeTypes';
+import { jsonMimeType } from '../@types/MimeTypes';
 
 export const isJSONResponse = (response: Response): boolean => {
   const contentType = response.headers.get('content-type') ?? '';
