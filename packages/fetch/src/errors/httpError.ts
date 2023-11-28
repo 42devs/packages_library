@@ -1,3 +1,5 @@
+import { getStatusTextFromCode } from '../utils/statusCodes';
+
 export class HttpError extends Error {
   request: Request;
 
@@ -6,7 +8,7 @@ export class HttpError extends Error {
   constructor(request: Request, response: Response) {
     const { status, statusText } = response;
 
-    super(statusText || String(status));
+    super(statusText || `${status} ${getStatusTextFromCode(status)}`);
 
     this.name = 'HTTP Error';
 

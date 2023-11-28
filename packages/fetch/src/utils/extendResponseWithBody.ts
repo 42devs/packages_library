@@ -43,7 +43,7 @@ export const extendResponseWithBody = (
   responsePromise.json = async () => {
     setAcceptHeader(jsonMimeType);
     const res = await responsePromise;
-    if (isJSONResponse(res)) return res.json();
+    if (isJSONResponse({ ...res, headers })) return res.json();
     return res.text();
   };
 };

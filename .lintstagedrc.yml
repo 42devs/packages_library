@@ -1,4 +1,4 @@
-'packages/**/*.{ts,vue,js}':
+'packages/**/*.{ts}':
   - prettier --write
   - eslint --fix
 

@@ -1,4 +1,4 @@
-interface ObjectWithEntries {
+export interface ObjectWithEntries {
   entries(): IterableIterator<[string, any]>; // eslint-disable-line
 }
 
