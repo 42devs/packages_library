@@ -12,10 +12,6 @@
     "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
     "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com/42devs/packages_library.git"
-  },
   "version": "2.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -41,10 +37,6 @@
     "gateway",
     "payment gateway"
   ],
-  "bugs": {
-    "url": "https://github.com/42devs/packages_library/issues"
-  },
-  "homepage": "https://github.com/42devs/packages_library/tree/main/packages/transbank-sdk#readme",
   "contributors": [
     {
       "name": "Nicolas Martinez V.",
