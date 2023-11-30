@@ -1,0 +1,55 @@
+name: Test Coverage full
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  coverage:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 19, 20, 21] # old-lts, current, lts, latest
+        pnpm-version: [ 8.11.0, 8.10.5, 8.10.4]
+
+    steps:
+      - name: setup nodejs ${{matrix.node-version}}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{matrix.node-version}}
+
+      - name: setup pnpm ${{matrix.pnpm-version}}
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{matrix.pnpm-version}}
+
+      - name: Chekout Repository
+        uses: actions/chekout@v3
+
+      - name: Install dependencies
+        run: pnpm Install
+        continue-on-error: false
+
+      - name: Run tests
+        run: pnpm run test
+        continue-on-error: false
+
+      - name: Run test coverage
+        run: pnpm run test:cov
+        continue-on-error: false
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          flags: unit test
+          name: Codecov Report
+          verbose: true
+          fail_ci_error: true
+
