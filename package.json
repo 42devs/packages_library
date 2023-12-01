@@ -34,7 +34,7 @@
     "clean:bundle": "npx lerna run clean:bundle --no-sort",
     "clean:dependencies": "npx lerna run clean:dependencies --no-sort",
     "commitMessage": "cz",
-    "publish": "npx lerna run publish",
+    "publish": "npx lerna run publish --no-sort",
     "prepare": "husky install",
     "lint": "npx lerna run lint --no-sort",
     "lint:fix": "npx lerna run lint:fix --no-sort",

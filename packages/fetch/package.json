@@ -10,6 +10,7 @@
     "docs": "typedoc",
     "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
     "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix",
+    "publish": "pnpm run build && npx lerna publish",
     "release": "npx semantic-release"
   },
   "keywords": [
