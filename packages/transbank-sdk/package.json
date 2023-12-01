@@ -12,7 +12,7 @@
     "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
     "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
@@ -43,5 +43,6 @@
       "email": "nicolas@42devs.cl",
       "url": "https://github.com/themakunga"
     }
-  ]
+  ],
+  "gitHead": "14198b66578683f7bb96c7a302b9341b8bc641fd"
 }
