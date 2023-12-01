@@ -1,0 +1,16 @@
+root: true
+parser: '@typescript-eslint/parser'
+extends:
+  - airbnb-typescript/base
+  - prettier
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/typescript
+plugins:
+  - '@typescript-eslint'
+  - import
+  - prettier
+parserOptions:
+  project: tsconfig.eslint.json
+rules:
+  '@typescript-eslint/no-unused-vars': warn
+  '@typescript-eslint/no-explicit-any': warn

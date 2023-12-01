@@ -1,0 +1,47 @@
+{
+  "name": "@42devs/transbank-sdk",
+  "description": "awesome package to use REST methods for transbank products",
+  "author": {
+    "name": "42devs",
+    "email": "hello@42devs.cl",
+    "url": "https://42devs.cl"
+  },
+  "scripts": {
+    "build": "rimraf ./lib && tsc -p tsconfig.pkg.json",
+    "docs": "typedoc",
+    "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
+    "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"
+  },
+  "version": "2.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "src": "src",
+    "lib": "lib"
+  },
+  "files": [
+    "README.md",
+    "src"
+  ],
+  "keywords": [
+    "payment",
+    "transbank",
+    "tbk",
+    "webpay",
+    "webpayPlus",
+    "oneclick",
+    "onepay",
+    "credit card",
+    "card",
+    "debit card",
+    "gateway",
+    "payment gateway"
+  ],
+  "contributors": [
+    {
+      "name": "Nicolas Martinez V.",
+      "email": "nicolas@42devs.cl",
+      "url": "https://github.com/themakunga"
+    }
+  ]
+}

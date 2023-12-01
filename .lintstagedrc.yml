@@ -1,0 +1,6 @@
+'packages/**/*.{ts}':
+  - prettier --write
+  - eslint --fix
+
+'**/*.{md,json,yaml,yml}':
+  - prettier --write
