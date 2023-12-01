@@ -1,4 +1,3 @@
-import { resolveSoa } from 'dns';
 import { request } from './request';
 
 const inputUrl: string = 'https://example.com';

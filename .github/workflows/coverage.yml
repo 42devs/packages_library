@@ -11,12 +11,12 @@ on:
 
 jobs:
   coverage:
-
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: true
       matrix:
-        node-version: [18, 19, 20, 21] # old-lts, current, lts, latest
-        pnpm-version: [ 8.11.0, 8.10.5, 8.10.4]
+        node-version: [20, 21] #lts, latest
+        pnpm-version: [8.11.0, 8.10.5] # current, stable
 
     steps:
       - name: setup nodejs ${{matrix.node-version}}
@@ -29,8 +29,8 @@ jobs:
         with:
           version: ${{matrix.pnpm-version}}
 
-      - name: Chekout Repository
-        uses: actions/chekout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: pnpm Install
@@ -52,4 +52,3 @@ jobs:
           name: Codecov Report
           verbose: true
           fail_ci_error: true
-

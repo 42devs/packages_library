@@ -4,3 +4,4 @@ dist/
 lib/
 .npmrc
 tsconfig.tsbuildinfo
+.DS_Store
