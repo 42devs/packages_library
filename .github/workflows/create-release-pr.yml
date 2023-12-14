@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: write
-  pull-request: write
+  pull-requests: write
 
 jobs:
   create pull request:
