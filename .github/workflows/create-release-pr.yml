@@ -5,7 +5,7 @@ on:
       - created
 
 permissions:
-  contents: true
+  contents: write
   pull-request: write
 
 jobs:
