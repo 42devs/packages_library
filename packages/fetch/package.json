@@ -1,6 +1,6 @@
 {
   "name": "@42devs/fetch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a fetch wrapper",
   "homepage": "https://github.com/42devs/packages_library/tree/main/packages/fetch/",
   "bugs": {
