@@ -1,22 +1,20 @@
 {
-  "exclude": [
-    "**/*.test.ts",
-    "**/*.spec.ts",
-    "**/*.stub.ts",
-    "node_modules",
-    "dist",
-    "lib"
-  ],
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "CommonJS",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
     "strict": true,
+    "incremental": true,
+    "sourceMap": true,
+    "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "paths": {
-      "@42devs/*": ["./packages/*"]
+      "@42devs/*": [
+        "./packages/*"
+      ]
     }
   }
 }

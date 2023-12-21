@@ -32,6 +32,7 @@
     "bootstrap": "npx lerna bootstrap",
     "build": "npx lerna run build",
     "build:dev": "tsc",
+    "build:clean": "npx lerna run build:clean",
     "bundle": "npx lerna run bundle",
     "update": "npx lerna run update",
     "clean": "npx lerna run clean --no-sort && npm run clean:nx-cache",
@@ -60,6 +61,10 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@jest/globals": "^29.7.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.1.0",
     "@semantic-release/git": "^10.0.1",
@@ -90,6 +95,8 @@
     "prettier": "^3.1.0",
     "prettier-eslint-cli": "^8.0.1",
     "rimraf": "^5.0.5",
+    "rollup": "^4.9.1",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
     "semantic-release": "^22.0.8",
     "semantic-release-cli": "^5.4.4",
     "semantic-release-lerna": "^2.0.0",
@@ -106,5 +113,10 @@
   },
   "publishConfig": {
     "access": "restricted"
+  },
+  "dependencies": {
+    "module": "^1.2.5",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.0"
   }
 }

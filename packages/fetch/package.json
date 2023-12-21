@@ -12,10 +12,22 @@
     "directory": "packages/fetch"
   },
   "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "rimraf ./lib && tsc -p ./tsconfig.pkg.json",
+    "build": "rollup -c ../../rollup.config.mjs",
+    "clean": "rimraf dist",
+    "build:clean": "pnpm run clean && pnpm run build",
     "test": "NODE_ENV=test jest",
-    "test:cov": "NODE_ENV=test jest --coverage --passWithNoTests",
     "lint": "eslint ./ --ext .ts --ignore-path .gitignore",
     "lint:fix": "eslint ./ --ext .ts --ignore-path .gitignore --fix"
   },
